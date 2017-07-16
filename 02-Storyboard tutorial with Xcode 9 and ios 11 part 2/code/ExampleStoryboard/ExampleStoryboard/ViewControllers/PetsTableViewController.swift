@@ -52,8 +52,11 @@ class PetsTableViewController: UITableViewController {
             labelTitle.text = eachPet.title
         }
         */
+        /*
         cell.labelName.text = eachPet.name
         cell.labelTitle.text = eachPet.title
+        */
+        cell.pet = eachPet
         return cell
     }
     
