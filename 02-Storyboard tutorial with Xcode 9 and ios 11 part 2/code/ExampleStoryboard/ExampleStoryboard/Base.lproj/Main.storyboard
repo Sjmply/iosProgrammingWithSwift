@@ -85,8 +85,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="labelName" destination="ALm-GU-zeH" id="Fqa-Yc-5bn"/>
-                                    <outlet property="labelTitle" destination="XXt-rG-Dpe" id="YQ8-s6-uyx"/>
+                                    <outlet property="labelName" destination="ALm-GU-zeH" id="r0b-Hd-Hb9"/>
+                                    <outlet property="labelTitle" destination="XXt-rG-Dpe" id="7Ft-ZH-GLW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

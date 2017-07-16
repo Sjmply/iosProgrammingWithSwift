@@ -51,7 +51,7 @@ class PetsTableViewController: UITableViewController {
         if let labelTitle = cell.viewWithTag(101) as? UILabel {
             labelTitle.text = eachPet.title
         }
-         */
+        */
         cell.labelName.text = eachPet.name
         cell.labelTitle.text = eachPet.title
         return cell

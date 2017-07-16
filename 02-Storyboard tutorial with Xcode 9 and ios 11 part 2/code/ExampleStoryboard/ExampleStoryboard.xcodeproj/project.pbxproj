@@ -10,24 +10,24 @@
 		FA1B27041F1B089B006B0A15 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B27031F1B089B006B0A15 /* Pet.swift */; };
 		FA1B27061F1B08DD006B0A15 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B27051F1B08DD006B0A15 /* SampleData.swift */; };
 		FA1B27081F1B0922006B0A15 /* PetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B27071F1B0922006B0A15 /* PetsTableViewController.swift */; };
-		FA1B270A1F1B12FD006B0A15 /* PetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B27091F1B12FD006B0A15 /* PetTableViewCell.swift */; };
 		FA6D7A111F1AF6E200AA7003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6D7A101F1AF6E200AA7003 /* AppDelegate.swift */; };
 		FA6D7A161F1AF6E200AA7003 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6D7A141F1AF6E200AA7003 /* Main.storyboard */; };
 		FA6D7A181F1AF6E200AA7003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6D7A171F1AF6E200AA7003 /* Assets.xcassets */; };
 		FA6D7A1B1F1AF6E200AA7003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6D7A191F1AF6E200AA7003 /* LaunchScreen.storyboard */; };
+		FAD5F6D31F1BCA3D00B04C79 /* PetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5F6D21F1BCA3D00B04C79 /* PetTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA1B27031F1B089B006B0A15 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		FA1B27051F1B08DD006B0A15 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		FA1B27071F1B0922006B0A15 /* PetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsTableViewController.swift; sourceTree = "<group>"; };
-		FA1B27091F1B12FD006B0A15 /* PetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTableViewCell.swift; sourceTree = "<group>"; };
 		FA6D7A0D1F1AF6E200AA7003 /* ExampleStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6D7A101F1AF6E200AA7003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA6D7A151F1AF6E200AA7003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA6D7A171F1AF6E200AA7003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA6D7A1A1F1AF6E200AA7003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA6D7A1C1F1AF6E200AA7003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD5F6D21F1BCA3D00B04C79 /* PetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +71,9 @@
 			children = (
 				FA6D7A101F1AF6E200AA7003 /* AppDelegate.swift */,
 				FA1B27071F1B0922006B0A15 /* PetsTableViewController.swift */,
+				FAD5F6D21F1BCA3D00B04C79 /* PetTableViewCell.swift */,
 				FA1B27021F1B088B006B0A15 /* Models */,
 				FA6D7A141F1AF6E200AA7003 /* Main.storyboard */,
-				FA1B27091F1B12FD006B0A15 /* PetTableViewCell.swift */,
 				FA6D7A171F1AF6E200AA7003 /* Assets.xcassets */,
 				FA6D7A191F1AF6E200AA7003 /* LaunchScreen.storyboard */,
 				FA6D7A1C1F1AF6E200AA7003 /* Info.plist */,
@@ -155,7 +155,7 @@
 				FA6D7A111F1AF6E200AA7003 /* AppDelegate.swift in Sources */,
 				FA1B27061F1B08DD006B0A15 /* SampleData.swift in Sources */,
 				FA1B27041F1B089B006B0A15 /* Pet.swift in Sources */,
-				FA1B270A1F1B12FD006B0A15 /* PetTableViewCell.swift in Sources */,
+				FAD5F6D31F1BCA3D00B04C79 /* PetTableViewCell.swift in Sources */,
 				FA1B27081F1B0922006B0A15 /* PetsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
