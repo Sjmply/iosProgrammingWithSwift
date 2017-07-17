@@ -111,31 +111,88 @@
         <scene sceneID="xeG-Op-sEI">
             <objects>
                 <tableViewController id="35A-Wd-1UA" customClass="AddPetTableViewController" customModule="ExampleStoryboard" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Oz3-SD-Ybk">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Oz3-SD-Ybk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2zy-S8-O3t">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2zy-S8-O3t" id="wbz-aa-Fa6">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Pet's name" id="ORX-tY-OmP">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2zy-S8-O3t">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2zy-S8-O3t" id="wbz-aa-Fa6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="fHi-Y4-URl">
+                                                    <rect key="frame" x="10" y="0.0" width="355" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fHi-Y4-URl" firstAttribute="leading" secondItem="wbz-aa-Fa6" secondAttribute="leading" constant="10" id="l22-t7-ycq"/>
+                                                <constraint firstAttribute="trailing" secondItem="fHi-Y4-URl" secondAttribute="trailing" constant="10" id="ma8-5R-eJm"/>
+                                                <constraint firstItem="fHi-Y4-URl" firstAttribute="top" secondItem="wbz-aa-Fa6" secondAttribute="top" id="tvk-j7-n6K"/>
+                                                <constraint firstAttribute="bottom" secondItem="fHi-Y4-URl" secondAttribute="bottom" id="uuj-8Y-aF8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Pet's title" id="KiS-mR-vWo">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AFZ-Ny-pC6">
+                                        <rect key="frame" x="0.0" y="155.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AFZ-Ny-pC6" id="jYS-Gc-1J1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="IHA-6i-yCp">
+                                                    <rect key="frame" x="10" y="-0.5" width="355" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IHA-6i-yCp" firstAttribute="top" secondItem="jYS-Gc-1J1" secondAttribute="top" id="1Qa-zj-HK2"/>
+                                                <constraint firstItem="IHA-6i-yCp" firstAttribute="leading" secondItem="jYS-Gc-1J1" secondAttribute="leading" constant="10" id="30L-my-LXM"/>
+                                                <constraint firstAttribute="bottom" secondItem="IHA-6i-yCp" secondAttribute="bottom" id="jb7-KL-Odg"/>
+                                                <constraint firstAttribute="trailing" secondItem="IHA-6i-yCp" secondAttribute="trailing" constant="10" id="qYz-Xf-NbS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
                         <connections>
                             <outlet property="dataSource" destination="35A-Wd-1UA" id="igT-eH-vWd"/>
                             <outlet property="delegate" destination="35A-Wd-1UA" id="NXD-Pd-zOz"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Pet" id="Uvu-Y1-uvj">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="zMW-EP-GCl"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="LOx-Qm-c7J"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="zMW-EP-GCl">
+                            <connections>
+                                <segue destination="5QS-cq-pyb" kind="unwind" unwindAction="backToPetsViewControllerWithSegue:" id="fww-Qs-giA"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="LOx-Qm-c7J">
+                            <connections>
+                                <segue destination="5QS-cq-pyb" kind="unwind" identifier="SavePetDetailSegue" unwindAction="savePetDetailWithSegue:" id="cF8-Dn-p9u"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textFieldName" destination="fHi-Y4-URl" id="VeT-SM-BKt"/>
+                        <outlet property="textFieldTitle" destination="IHA-6i-yCp" id="G0f-vE-Wsa"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTE-Fd-sZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5QS-cq-pyb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2540" y="-281"/>
         </scene>

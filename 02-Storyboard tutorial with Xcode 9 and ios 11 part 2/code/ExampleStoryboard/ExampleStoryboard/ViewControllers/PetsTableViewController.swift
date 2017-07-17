@@ -60,7 +60,23 @@ class PetsTableViewController: UITableViewController {
         return cell
     }
     
-
+    //Unwind segues to this ViewController
+    @IBAction func backToPetsViewController(segue:UIStoryboardSegue) {
+        print("press cancel")
+    }
+    @IBAction func savePetDetail(segue:UIStoryboardSegue) {
+        print("press Done")
+        if let addPetTableViewController = segue.source as? AddPetTableViewController {
+            //add the new pet to the pets array
+            if let pet = addPetTableViewController.pet {
+                self.pets.append(pet)
+                //update the tableView
+                let indexPath = IndexPath(row: self.pets.count-1, section: 0)
+                tableView.insertRows(at: [indexPath], with: .automatic)
+            }
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
