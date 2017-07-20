@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StackViewExample/MainViewController.swift"
-            timestampString = "522235992.906142"
+            timestampString = "522236173.527984"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "autolayoutTextViewDescription()"
             landmarkType = "7">
          </BreakpointContent>

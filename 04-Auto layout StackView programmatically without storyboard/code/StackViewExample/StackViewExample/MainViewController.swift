@@ -52,6 +52,7 @@ class MainViewController: UIViewController {
                                                                    views: ["mainStackView": mainStackView]))        
         mainStackView.alignment = .leading //leading = "left"
         mainStackView.distribution = .fillProportionally
+        mainStackView.spacing = 10
     }
     private func autolayoutStackView1() {
         mainStackView.addSubview(stackView1)
@@ -84,8 +85,8 @@ class MainViewController: UIViewController {
     private func autolayoutTextViewDescription() {
         mainStackView.addSubview(txtViewDescription)
         txtViewDescription.text = "Your description..."
-        txtViewDescription.backgroundColor = UIColor(colorLiteralRed: 241.0 / 255.0, green: 217.0 / 255.0, blue: 213.0 / 255.0, alpha: 1)
-        txtViewDescription.translatesAutoresizingMaskIntoConstraints = false
+        txtViewDescription.backgroundColor = UIColor(colorLiteralRed: 234.0 / 255.0, green: 221.0 / 255.0, blue: 209.0 / 255.0, alpha: 1)
+        txtViewDescription.translatesAutoresizingMaskIntoConstraints = false        
         
         NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "V:[stackView1]-[txtViewDescription]-[stackView2]",
                                                                    options: [],
