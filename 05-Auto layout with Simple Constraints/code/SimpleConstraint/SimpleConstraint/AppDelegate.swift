@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  StackViewExample
+//  SimpleConstraint
 //
 //  Created by Nguyen Duc Hoang on 7/18/17.
 //  Copyright © 2017 Nguyen Duc Hoang. All rights reserved.
