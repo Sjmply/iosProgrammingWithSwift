@@ -23,6 +23,11 @@ class MainViewController: UIViewController {
     
     var stackView2:UIStackView = UIStackView()
     
+    var btnCancel:UIButton = UIButton()
+    var btnSave:UIButton = UIButton()
+    var btnClear:UIButton = UIButton()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -144,6 +149,31 @@ class MainViewController: UIViewController {
         stackView2.translatesAutoresizingMaskIntoConstraints = false
         stackView2.backgroundColor = UIColor.blue
         stackView2.heightAnchor.constraint(equalToConstant: 44).isActive = true
+        
+        //autolayout 3 buttons
+        btnCancel.translatesAutoresizingMaskIntoConstraints = false
+        btnCancel.backgroundColor = .cyan
+        btnCancel.setTitle("Cancel", for: .normal)
+        btnCancel.setTitleColor(.white, for: .normal)
+        stackView2.addArrangedSubview(btnCancel)
+        
+        btnSave.translatesAutoresizingMaskIntoConstraints = false
+        btnSave.backgroundColor = .cyan
+        btnSave.setTitle("Save", for: .normal)
+        btnSave.setTitleColor(.white, for: .normal)
+        stackView2.addArrangedSubview(btnSave)
+        
+        btnClear.translatesAutoresizingMaskIntoConstraints = false
+        btnClear.backgroundColor = .cyan
+        btnClear.setTitle("Clear", for: .normal)
+        btnClear.setTitleColor(.white, for: .normal)
+        stackView2.addArrangedSubview(btnClear)
+        
+        //stackView2 settings
+        stackView2.axis = .horizontal
+        stackView2.alignment = .center
+        stackView2.distribution = .fillEqually
+        stackView2.spacing = 10
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
