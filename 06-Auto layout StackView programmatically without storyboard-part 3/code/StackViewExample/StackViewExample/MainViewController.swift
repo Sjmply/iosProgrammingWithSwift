@@ -152,34 +152,39 @@ class MainViewController: UIViewController {
         
         //autolayout 3 buttons
         btnCancel.translatesAutoresizingMaskIntoConstraints = false
-        btnCancel.backgroundColor = .cyan
+        btnCancel.backgroundColor = UIColor(red: 121.0 / 255.0, green: 200.0 / 255.0, blue: 166.0 / 255.0, alpha: 1)
         btnCancel.setTitle("Cancel", for: .normal)
         btnCancel.setTitleColor(.white, for: .normal)
         stackView2.addArrangedSubview(btnCancel)
         
         btnSave.translatesAutoresizingMaskIntoConstraints = false
-        btnSave.backgroundColor = .cyan
+        btnSave.backgroundColor = UIColor(red: 121.0 / 255.0, green: 200.0 / 255.0, blue: 166.0 / 255.0, alpha: 1)
         btnSave.setTitle("Save", for: .normal)
         btnSave.setTitleColor(.white, for: .normal)
         stackView2.addArrangedSubview(btnSave)
         
         btnClear.translatesAutoresizingMaskIntoConstraints = false
-        btnClear.backgroundColor = .cyan
+        btnClear.backgroundColor = UIColor(red: 121.0 / 255.0, green: 200.0 / 255.0, blue: 166.0 / 255.0, alpha: 1)
         btnClear.setTitle("Clear", for: .normal)
         btnClear.setTitleColor(.white, for: .normal)
         stackView2.addArrangedSubview(btnClear)
         
+        //autolayout button's height
+        btnCancel.heightAnchor.constraint(equalTo: stackView2.heightAnchor, multiplier: 1).isActive = true
+        btnSave.heightAnchor.constraint(equalTo: stackView2.heightAnchor, multiplier: 1).isActive = true
+        btnClear.heightAnchor.constraint(equalTo: stackView2.heightAnchor, multiplier: 1).isActive = true
         //stackView2 settings
         stackView2.axis = .horizontal
         stackView2.alignment = .center
         stackView2.distribution = .fillEqually
         stackView2.spacing = 10
+        //121 200 166
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 //        mainStackView.changeBackgroundColor(color: UIColor.cyan)
 //        stackView1.changeBackgroundColor(color: UIColor.orange)
-        stackView2.changeBackgroundColor(color: UIColor.blue)
+//        stackView2.changeBackgroundColor(color: UIColor.blue)
 //        stackView12.changeBackgroundColor(color: UIColor.magenta)
         print("x123")
     }
