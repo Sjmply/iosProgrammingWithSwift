@@ -82,12 +82,8 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="Oti-I6-mIC" firstAttribute="top" secondItem="CR6-nz-oLV" secondAttribute="top" id="5nz-18-Onj"/>
-                                            <constraint firstAttribute="bottom" secondItem="Oti-I6-mIC" secondAttribute="bottom" id="5vP-G5-Y72"/>
-                                            <constraint firstAttribute="bottom" secondItem="JPw-eI-UzZ" secondAttribute="bottom" id="CYn-Lu-dGp"/>
                                             <constraint firstAttribute="trailing" secondItem="JPw-eI-UzZ" secondAttribute="trailing" id="GzD-Ll-5Ab"/>
                                             <constraint firstItem="JPw-eI-UzZ" firstAttribute="top" secondItem="CR6-nz-oLV" secondAttribute="top" id="Wbe-pT-IFt"/>
-                                            <constraint firstItem="Oti-I6-mIC" firstAttribute="leading" secondItem="CR6-nz-oLV" secondAttribute="leading" id="vsB-3c-WnE"/>
                                         </constraints>
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v9e-o2-VHV">
