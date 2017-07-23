@@ -183,7 +183,7 @@ class MainViewController: UIViewController {
 //        mainStackView.changeBackgroundColor(color: UIColor.cyan)
 //        stackView1.changeBackgroundColor(color: UIColor.orange)
 //        stackView2.changeBackgroundColor(color: UIColor.blue)
-        print("x123")
+//        print("x123")
     }
     
 }
