@@ -27,7 +27,6 @@ class MainViewController: UIViewController {
     var btnSave:UIButton = UIButton()
     var btnClear:UIButton = UIButton()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -178,14 +177,12 @@ class MainViewController: UIViewController {
         stackView2.alignment = .center
         stackView2.distribution = .fillEqually
         stackView2.spacing = 10
-        //121 200 166
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 //        mainStackView.changeBackgroundColor(color: UIColor.cyan)
 //        stackView1.changeBackgroundColor(color: UIColor.orange)
 //        stackView2.changeBackgroundColor(color: UIColor.blue)
-//        stackView12.changeBackgroundColor(color: UIColor.magenta)
         print("x123")
     }
     
