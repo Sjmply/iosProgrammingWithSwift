@@ -19,6 +19,3 @@ extension UITextField {
         parentStackView.addArrangedSubview(self)
     }
 }
-
-
-

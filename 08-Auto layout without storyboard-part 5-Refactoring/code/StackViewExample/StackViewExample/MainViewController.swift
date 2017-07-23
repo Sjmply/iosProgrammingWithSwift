@@ -15,6 +15,14 @@ class MainViewController: UIViewController {
     
     var imageView: UIImageView = UIImageView()
     
+    var labelFirst:UILabel?
+    var labelMiddle:UILabel?
+    var labelLast:UILabel?
+    
+    var txtFirst:UITextField?
+    var txtMiddle:UITextField?
+    var txtLast:UITextField?
+    
     var stackView11:UIStackView = UIStackView()
     
     var stackView12:UIStackView = UIStackView()
@@ -86,26 +94,9 @@ class MainViewController: UIViewController {
         stackView11.distribution = .equalCentering
         stackView11.spacing = 10
         
-//        let labelFirst = UILabel()
-//        labelFirst.translatesAutoresizingMaskIntoConstraints = false
-//        labelFirst.text = "First"
-//        labelFirst.font = labelFirst.font?.withSize(UIDevice.setSize(iPhone: 15, iPad: 22))
-//        stackView11.addArrangedSubview(labelFirst)
-        let labelFirst = UILabel(text: "First", fontSize: UIDevice.setSize(iPhone: 15, iPad: 22), parentStackView: stackView11)
-        
-//        let labelMiddle = UILabel()
-//        labelMiddle.translatesAutoresizingMaskIntoConstraints = false
-//        labelMiddle.text = "Middle"
-//        labelMiddle.font = labelMiddle.font?.withSize(UIDevice.setSize(iPhone: 15, iPad: 22))
-//        stackView11.addArrangedSubview(labelMiddle)
-        let labelMiddle = UILabel(text: "Middle", fontSize: UIDevice.setSize(iPhone: 15, iPad: 22), parentStackView: stackView11)
-        
-//        let labelLast = UILabel()
-//        labelLast.translatesAutoresizingMaskIntoConstraints = false
-//        labelLast.text = "Last"
-//        labelLast.font = labelLast.font?.withSize(UIDevice.setSize(iPhone: 15, iPad: 22))
-//        stackView11.addArrangedSubview(labelLast)
-        let labelLast = UILabel(text: "Last", fontSize: UIDevice.setSize(iPhone: 15, iPad: 22), parentStackView: stackView11)
+        labelFirst = UILabel(text: "First", fontSize: UIDevice.setSize(iPhone: 15, iPad: 22), parentStackView: stackView11)
+        labelMiddle = UILabel(text: "Middle", fontSize: UIDevice.setSize(iPhone: 15, iPad: 22), parentStackView: stackView11)
+        labelLast = UILabel(text: "Last", fontSize: UIDevice.setSize(iPhone: 15, iPad: 22), parentStackView: stackView11)
         
         stackView11.widthAnchor.constraint(equalToConstant: UIDevice.setSize(iPhone: 70, iPad: 100)).isActive = true
         
@@ -117,40 +108,17 @@ class MainViewController: UIViewController {
         stackView12.distribution = .equalSpacing
         stackView12.spacing = 0
         
-//        let txtFirst = UITextField()
-//        txtFirst.translatesAutoresizingMaskIntoConstraints = false
-//        txtFirst.placeholder = "First"
-//        txtFirst.font = txtFirst.font?.withSize(UIDevice.setSize(iPhone: 15, iPad: 22))
-//        txtFirst.borderStyle = .roundedRect
-//        stackView12.addArrangedSubview(txtFirst)
-        let txtFirst = UITextField(placeholder: "First", fontSize: UIDevice.setSize(iPhone: 15, iPad: 22),
+        txtFirst = UITextField(placeholder: "First", fontSize: UIDevice.setSize(iPhone: 15, iPad: 22),
                                    borderStyle: .roundedRect, parentStackView: stackView12)
-        
-//        let txtMiddle = UITextField()
-//        txtMiddle.translatesAutoresizingMaskIntoConstraints = false
-//        txtMiddle.placeholder = "Middle"
-//        txtMiddle.font = txtMiddle.font?.withSize(UIDevice.setSize(iPhone: 15, iPad: 22))
-//        txtMiddle.borderStyle = .roundedRect
-//        stackView12.addArrangedSubview(txtMiddle)
-        let txtMiddle = UITextField(placeholder: "Middle", fontSize: UIDevice.setSize(iPhone: 15, iPad: 22),
-                                   borderStyle: .roundedRect, parentStackView: stackView12)
-        
-//        let txtLast = UITextField()
-//        txtLast.translatesAutoresizingMaskIntoConstraints = false
-//        txtLast.placeholder = "Last"
-//        txtLast.font = txtLast.font?.withSize(UIDevice.setSize(iPhone: 15, iPad: 22))
-//        txtLast.borderStyle = .roundedRect
-//        stackView12.addArrangedSubview(txtLast)
-        let txtLast = UITextField(placeholder: "Last", fontSize: UIDevice.setSize(iPhone: 15, iPad: 22),
+        txtMiddle = UITextField(placeholder: "Middle", fontSize: UIDevice.setSize(iPhone: 15, iPad: 22),
                                     borderStyle: .roundedRect, parentStackView: stackView12)
-        
-        
+        txtLast = UITextField(placeholder: "Last", fontSize: UIDevice.setSize(iPhone: 15, iPad: 22),
+                                  borderStyle: .roundedRect, parentStackView: stackView12)
     }
     private func autolayoutTextViewDescription() {
         mainStackView.addArrangedSubview(txtViewDescription)
         txtViewDescription.text = "Your description..."
         txtViewDescription.font = txtViewDescription.font?.withSize(UIDevice.setSize(iPhone: 15, iPad: 22))
-//        txtViewDescription.backgroundColor = UIColor(colorLiteralRed: 234.0 / 255.0, green: 221.0 / 255.0, blue: 209.0 / 255.0, alpha: 1)
         txtViewDescription.backgroundColor = UIColor(234, 221, 209)
         txtViewDescription.translatesAutoresizingMaskIntoConstraints = false
     }
@@ -163,21 +131,18 @@ class MainViewController: UIViewController {
         
         //autolayout 3 buttons
         btnCancel.translatesAutoresizingMaskIntoConstraints = false
-//        btnCancel.backgroundColor = UIColor(red: 121.0 / 255.0, green: 200.0 / 255.0, blue: 166.0 / 255.0, alpha: 1)
         btnCancel.backgroundColor = UIColor(121, 200, 166)
         btnCancel.setTitle("Cancel", for: .normal)
         btnCancel.setTitleColor(.white, for: .normal)
         stackView2.addArrangedSubview(btnCancel)
         
         btnSave.translatesAutoresizingMaskIntoConstraints = false
-//        btnSave.backgroundColor = UIColor(red: 121.0 / 255.0, green: 200.0 / 255.0, blue: 166.0 / 255.0, alpha: 1)
         btnSave.backgroundColor = UIColor(121, 200, 166)
         btnSave.setTitle("Save", for: .normal)
         btnSave.setTitleColor(.white, for: .normal)
         stackView2.addArrangedSubview(btnSave)
         
         btnClear.translatesAutoresizingMaskIntoConstraints = false
-//        btnClear.backgroundColor = UIColor(red: 121.0 / 255.0, green: 200.0 / 255.0, blue: 166.0 / 255.0, alpha: 1)
         btnClear.backgroundColor = UIColor(121, 200, 166)
         btnClear.setTitle("Clear", for: .normal)
         btnClear.setTitleColor(.white, for: .normal)

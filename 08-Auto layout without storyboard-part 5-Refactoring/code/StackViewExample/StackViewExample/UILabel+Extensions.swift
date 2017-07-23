@@ -12,9 +12,9 @@ import UIKit
 extension UILabel {
     convenience init(text: String?, fontSize: CGFloat, parentStackView: UIStackView) {
         self.init()
-        self.text = text
         self.translatesAutoresizingMaskIntoConstraints = false
-        parentStackView.addArrangedSubview(self)
+        self.text = text
         self.font = self.font?.withSize(fontSize)
+        parentStackView.addArrangedSubview(self)
     }
 }
