@@ -20,30 +20,40 @@ class FoodCollectionCell: UICollectionViewCell {
         
     }
     func autolayoutCell() {
+        self.backgroundColor = .cyan
         self.addSubview(stackView)
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.changeBackgroundColor(color: .red)
         stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
         stackView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
         
         //autolayout imageView
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.heightAnchor.constraint(equalToConstant: (2.0 / 3.0)*self.frame.height).isActive = true
-//        imageView.widthAnchor.constraint(equalToConstant:self.frame.width)
-        imageView.image = #imageLiteral(resourceName: "salad-mushroom")
         stackView.addArrangedSubview(imageView)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.heightAnchor.constraint(equalTo: stackView.heightAnchor, multiplier: 2.0/3.0).isActive = true
+        imageView.image = #imageLiteral(resourceName: "salad-mushroom")
+        
         //autolayout labelFoodName
         labelFoodName.translatesAutoresizingMaskIntoConstraints = false
-        labelFoodName.text = "hello"
-        labelFoodName.textColor = .white
+        labelFoodName.text = "hello hello hello hello hello hello hello hello hello"
         labelFoodName.numberOfLines = 1
         stackView.addArrangedSubview(labelFoodName)
+        
+        //autolayout labelFoodName
+        labelFoodDescription.translatesAutoresizingMaskIntoConstraints = false
+        labelFoodDescription.text = "description description description. description description description description description"
+        labelFoodDescription.numberOfLines = 1
+        stackView.addArrangedSubview(labelFoodDescription)
+        
+        //bottom of labelFoodDescription
+//        labelFoodDescription.bottomAnchor.constraint(equalTo: stackView.bottomAnchor, constant: -10).isActive = true
+        
         //stackView setting
         stackView.axis = .vertical
-        stackView.alignment = .center
+        stackView.alignment = .leading
         stackView.distribution = .equalSpacing
+        stackView.spacing = 10 
     }
     
     var food: Food! {

@@ -54,7 +54,6 @@ class MainViewController: UIViewController,
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! FoodCollectionCell
         cell.autolayoutCell()
-        cell.backgroundColor = .red
 //        cell.food = foods[indexPath.row]
         return cell
     }
