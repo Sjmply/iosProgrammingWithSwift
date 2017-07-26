@@ -20,7 +20,8 @@ class FoodCollectionCell: UICollectionViewCell {
         
     }
     func autolayoutCell() {
-        self.backgroundColor = .cyan
+//        self.backgroundColor = .cyan
+        self.backgroundColor = .white
         self.addSubview(stackView)
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
@@ -32,22 +33,21 @@ class FoodCollectionCell: UICollectionViewCell {
         stackView.addArrangedSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.heightAnchor.constraint(equalTo: stackView.heightAnchor, multiplier: 2.0/3.0).isActive = true
-        imageView.image = #imageLiteral(resourceName: "salad-mushroom")
+//        imageView.image = #imageLiteral(resourceName: "salad-mushroom")
         
         //autolayout labelFoodName
         labelFoodName.translatesAutoresizingMaskIntoConstraints = false
         labelFoodName.text = "hello hello hello hello hello hello hello hello hello"
-        labelFoodName.numberOfLines = 1
+        labelFoodName.font = UIFont.boldSystemFont(ofSize: 15)
         stackView.addArrangedSubview(labelFoodName)
         
         //autolayout labelFoodName
         labelFoodDescription.translatesAutoresizingMaskIntoConstraints = false
         labelFoodDescription.text = "description description description. description description description description description"
-        labelFoodDescription.numberOfLines = 1
+        labelFoodDescription.font = UIFont.systemFont(ofSize: 15)
         stackView.addArrangedSubview(labelFoodDescription)
         
         //bottom of labelFoodDescription
-//        labelFoodDescription.bottomAnchor.constraint(equalTo: stackView.bottomAnchor, constant: -10).isActive = true
         
         //stackView setting
         stackView.axis = .vertical
@@ -58,7 +58,7 @@ class FoodCollectionCell: UICollectionViewCell {
     
     var food: Food! {
         didSet {
-            imageView.image = UIImage(named: food.foodName!)
+            imageView.image = UIImage(named: food.imageName!)
             labelFoodName.text = food.foodName ?? ""
             labelFoodDescription.text = food.foodDescription ?? ""
         }
