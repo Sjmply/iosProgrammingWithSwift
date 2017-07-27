@@ -30,13 +30,9 @@ class MainViewController: UIViewController,
         collectionView?.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         collectionView?.backgroundColor = .white
         //collectionView settings
-        let collectionViewFlowLayout = UICollectionViewFlowLayout()
+        let collectionViewFlowLayout = CollectionViewFlowLayout()
         collectionView?.setCollectionViewLayout(collectionViewFlowLayout, animated: true)
-        collectionViewFlowLayout.scrollDirection = .vertical
-        collectionViewFlowLayout.sectionInset = UIEdgeInsets(top: 0, left: cellSpacing, bottom: 0, right: cellSpacing)
-        collectionViewFlowLayout.minimumInteritemSpacing = 10
-        collectionViewFlowLayout.minimumLineSpacing = 10
-        
+        collectionViewFlowLayout.sectionInset = UIEdgeInsets(top: 0, left: cellSpacing, bottom: 0, right: cellSpacing)        
         collectionView?.register(FoodCollectionCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.delegate = self
         collectionView?.dataSource = self
@@ -61,5 +57,6 @@ class MainViewController: UIViewController,
         let height = width
         return CGSize(width: width, height: height)
     }
+    //Decoration View
     
 }
