@@ -13,4 +13,5 @@ struct Food {
     var imageName: String?
     var foodName: String?
     var foodDescription: String?
+    var imageURL: String?
 }
