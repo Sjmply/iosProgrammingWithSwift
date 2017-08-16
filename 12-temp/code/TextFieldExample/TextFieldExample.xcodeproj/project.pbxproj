@@ -7,31 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA1942981F280D6800195E16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1942971F280D6800195E16 /* AppDelegate.swift */; };
-		FA19429F1F280D6800195E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA19429E1F280D6800195E16 /* Assets.xcassets */; };
-		FA1942A21F280D6800195E16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1942A01F280D6800195E16 /* LaunchScreen.storyboard */; };
-		FA1942AA1F280DC000195E16 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1942A91F280DC000195E16 /* MainViewController.swift */; };
-		FA30EB691F42808600EB9841 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30EB681F42808600EB9841 /* UIImageView+Extensions.swift */; };
-		FA7E387A1F288EF600A37145 /* FoodCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E38791F288EF600A37145 /* FoodCollectionCell.swift */; };
-		FA7E387D1F28918000A37145 /* FoodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E387C1F28918000A37145 /* FoodData.swift */; };
-		FA7E38801F2891A200A37145 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E387F1F2891A200A37145 /* Food.swift */; };
+		FA30EB771F4348C400EB9841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30EB761F4348C400EB9841 /* AppDelegate.swift */; };
+		FA30EB7C1F4348C400EB9841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA30EB7A1F4348C400EB9841 /* Main.storyboard */; };
+		FA30EB7E1F4348C400EB9841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA30EB7D1F4348C400EB9841 /* Assets.xcassets */; };
+		FA30EB811F4348C400EB9841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA30EB7F1F4348C400EB9841 /* LaunchScreen.storyboard */; };
+		FA34B0FD1F43C781009C2182 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34B0FC1F43C781009C2182 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA1942941F280D6800195E16 /* CollectionViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA1942971F280D6800195E16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA19429E1F280D6800195E16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FA1942A11F280D6800195E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FA1942A31F280D6800195E16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA1942A91F280DC000195E16 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		FA30EB681F42808600EB9841 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
-		FA7E38791F288EF600A37145 /* FoodCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionCell.swift; sourceTree = "<group>"; };
-		FA7E387C1F28918000A37145 /* FoodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodData.swift; sourceTree = "<group>"; };
-		FA7E387F1F2891A200A37145 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		FA30EB731F4348C400EB9841 /* TextFieldExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFieldExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA30EB761F4348C400EB9841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA30EB7B1F4348C400EB9841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA30EB7D1F4348C400EB9841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA30EB801F4348C400EB9841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA30EB821F4348C400EB9841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA34B0FC1F43C781009C2182 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FA1942911F280D6800195E16 /* Frameworks */ = {
+		FA30EB701F4348C400EB9841 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,98 +35,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA19428B1F280D6800195E16 = {
+		FA30EB6A1F4348C400EB9841 = {
 			isa = PBXGroup;
 			children = (
-				FA1942961F280D6800195E16 /* CollectionViewExample */,
-				FA1942951F280D6800195E16 /* Products */,
+				FA30EB751F4348C400EB9841 /* TextFieldExample */,
+				FA30EB741F4348C400EB9841 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FA1942951F280D6800195E16 /* Products */ = {
+		FA30EB741F4348C400EB9841 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA1942941F280D6800195E16 /* CollectionViewExample.app */,
+				FA30EB731F4348C400EB9841 /* TextFieldExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA1942961F280D6800195E16 /* CollectionViewExample */ = {
+		FA30EB751F4348C400EB9841 /* TextFieldExample */ = {
 			isa = PBXGroup;
 			children = (
-				FA1942971F280D6800195E16 /* AppDelegate.swift */,
-				FA1942A91F280DC000195E16 /* MainViewController.swift */,
-				FA7E387B1F28916600A37145 /* Data */,
-				FA7E38791F288EF600A37145 /* FoodCollectionCell.swift */,
-				FA30EB671F42806700EB9841 /* Extensions */,
-				FA7E387E1F28919100A37145 /* Models */,
-				FA19429E1F280D6800195E16 /* Assets.xcassets */,
-				FA1942A01F280D6800195E16 /* LaunchScreen.storyboard */,
-				FA1942A31F280D6800195E16 /* Info.plist */,
+				FA30EB761F4348C400EB9841 /* AppDelegate.swift */,
+				FA34B0FC1F43C781009C2182 /* MainViewController.swift */,
+				FA30EB7A1F4348C400EB9841 /* Main.storyboard */,
+				FA30EB7D1F4348C400EB9841 /* Assets.xcassets */,
+				FA30EB7F1F4348C400EB9841 /* LaunchScreen.storyboard */,
+				FA30EB821F4348C400EB9841 /* Info.plist */,
 			);
-			path = CollectionViewExample;
-			sourceTree = "<group>";
-		};
-		FA30EB671F42806700EB9841 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				FA30EB681F42808600EB9841 /* UIImageView+Extensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		FA7E387B1F28916600A37145 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				FA7E387C1F28918000A37145 /* FoodData.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		FA7E387E1F28919100A37145 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FA7E387F1F2891A200A37145 /* Food.swift */,
-			);
-			path = Models;
+			path = TextFieldExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA1942931F280D6800195E16 /* CollectionViewExample */ = {
+		FA30EB721F4348C400EB9841 /* TextFieldExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA1942A61F280D6800195E16 /* Build configuration list for PBXNativeTarget "CollectionViewExample" */;
+			buildConfigurationList = FA30EB851F4348C400EB9841 /* Build configuration list for PBXNativeTarget "TextFieldExample" */;
 			buildPhases = (
-				FA1942901F280D6800195E16 /* Sources */,
-				FA1942911F280D6800195E16 /* Frameworks */,
-				FA1942921F280D6800195E16 /* Resources */,
+				FA30EB6F1F4348C400EB9841 /* Sources */,
+				FA30EB701F4348C400EB9841 /* Frameworks */,
+				FA30EB711F4348C400EB9841 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CollectionViewExample;
-			productName = CollectionViewExample;
-			productReference = FA1942941F280D6800195E16 /* CollectionViewExample.app */;
+			name = TextFieldExample;
+			productName = TextFieldExample;
+			productReference = FA30EB731F4348C400EB9841 /* TextFieldExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FA19428C1F280D6800195E16 /* Project object */ = {
+		FA30EB6B1F4348C400EB9841 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Nguyen Duc Hoang";
 				TargetAttributes = {
-					FA1942931F280D6800195E16 = {
+					FA30EB721F4348C400EB9841 = {
 						CreatedOnToolsVersion = 9.0;
 					};
 				};
 			};
-			buildConfigurationList = FA19428F1F280D6800195E16 /* Build configuration list for PBXProject "CollectionViewExample" */;
+			buildConfigurationList = FA30EB6E1F4348C400EB9841 /* Build configuration list for PBXProject "TextFieldExample" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -140,49 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = FA19428B1F280D6800195E16;
-			productRefGroup = FA1942951F280D6800195E16 /* Products */;
+			mainGroup = FA30EB6A1F4348C400EB9841;
+			productRefGroup = FA30EB741F4348C400EB9841 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA1942931F280D6800195E16 /* CollectionViewExample */,
+				FA30EB721F4348C400EB9841 /* TextFieldExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FA1942921F280D6800195E16 /* Resources */ = {
+		FA30EB711F4348C400EB9841 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA1942A21F280D6800195E16 /* LaunchScreen.storyboard in Resources */,
-				FA19429F1F280D6800195E16 /* Assets.xcassets in Resources */,
+				FA30EB811F4348C400EB9841 /* LaunchScreen.storyboard in Resources */,
+				FA30EB7E1F4348C400EB9841 /* Assets.xcassets in Resources */,
+				FA30EB7C1F4348C400EB9841 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FA1942901F280D6800195E16 /* Sources */ = {
+		FA30EB6F1F4348C400EB9841 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA30EB691F42808600EB9841 /* UIImageView+Extensions.swift in Sources */,
-				FA7E387A1F288EF600A37145 /* FoodCollectionCell.swift in Sources */,
-				FA1942981F280D6800195E16 /* AppDelegate.swift in Sources */,
-				FA7E38801F2891A200A37145 /* Food.swift in Sources */,
-				FA1942AA1F280DC000195E16 /* MainViewController.swift in Sources */,
-				FA7E387D1F28918000A37145 /* FoodData.swift in Sources */,
+				FA30EB771F4348C400EB9841 /* AppDelegate.swift in Sources */,
+				FA34B0FD1F43C781009C2182 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FA1942A01F280D6800195E16 /* LaunchScreen.storyboard */ = {
+		FA30EB7A1F4348C400EB9841 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FA1942A11F280D6800195E16 /* Base */,
+				FA30EB7B1F4348C400EB9841 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA30EB7F1F4348C400EB9841 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA30EB801F4348C400EB9841 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -190,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FA1942A41F280D6800195E16 /* Debug */ = {
+		FA30EB831F4348C400EB9841 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -247,7 +219,7 @@
 			};
 			name = Debug;
 		};
-		FA1942A51F280D6800195E16 /* Release */ = {
+		FA30EB841F4348C400EB9841 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -297,28 +269,28 @@
 			};
 			name = Release;
 		};
-		FA1942A71F280D6800195E16 /* Debug */ = {
+		FA30EB861F4348C400EB9841 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JD5VUV7783;
-				INFOPLIST_FILE = CollectionViewExample/Info.plist;
+				INFOPLIST_FILE = TextFieldExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunlight4d.SwiftTutorial.CollectionViewExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunlight4d.SwiftTutorial.TextFieldExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		FA1942A81F280D6800195E16 /* Release */ = {
+		FA30EB871F4348C400EB9841 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JD5VUV7783;
-				INFOPLIST_FILE = CollectionViewExample/Info.plist;
+				INFOPLIST_FILE = TextFieldExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunlight4d.SwiftTutorial.CollectionViewExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunlight4d.SwiftTutorial.TextFieldExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -328,25 +300,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA19428F1F280D6800195E16 /* Build configuration list for PBXProject "CollectionViewExample" */ = {
+		FA30EB6E1F4348C400EB9841 /* Build configuration list for PBXProject "TextFieldExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA1942A41F280D6800195E16 /* Debug */,
-				FA1942A51F280D6800195E16 /* Release */,
+				FA30EB831F4348C400EB9841 /* Debug */,
+				FA30EB841F4348C400EB9841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA1942A61F280D6800195E16 /* Build configuration list for PBXNativeTarget "CollectionViewExample" */ = {
+		FA30EB851F4348C400EB9841 /* Build configuration list for PBXNativeTarget "TextFieldExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA1942A71F280D6800195E16 /* Debug */,
-				FA1942A81F280D6800195E16 /* Release */,
+				FA30EB861F4348C400EB9841 /* Debug */,
+				FA30EB871F4348C400EB9841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FA19428C1F280D6800195E16 /* Project object */;
+	rootObject = FA30EB6B1F4348C400EB9841 /* Project object */;
 }

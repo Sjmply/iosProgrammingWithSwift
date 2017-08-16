@@ -46,11 +46,8 @@ class FoodCollectionCell: UICollectionViewCell {
     }
     var food: Food! {
         didSet {
-//            imageView.image = UIImage(named: food.imageName!)
-            imageView.getImageFromURL(urlString: food.imageURL ?? "")
-            DispatchQueue.main.async(execute: { () -> Void in
-                
-            })
+            //imageView.image = UIImage(named: food.imageName!)
+            imageView.getImageFromURL(urlString: food.imageURL  ?? "")
             labelFoodName.text = food.foodName ?? ""
             labelFoodDescription.text = food.foodDescription ?? ""
         }
