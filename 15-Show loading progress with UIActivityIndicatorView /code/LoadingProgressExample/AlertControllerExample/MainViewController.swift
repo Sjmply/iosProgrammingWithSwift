@@ -68,8 +68,26 @@ class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINav
     //MARK - UINavigationControllerDelegate
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let chosenImage:UIImage = info[UIImagePickerControllerEditedImage] as! UIImage
-        self.imageView?.image = chosenImage
-        picker.dismiss(animated: true, completion: nil)
+        picker.dismiss(animated: true, completion: {
+            let activityindicatorView = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+            activityindicatorView.color = UIColor.red
+            self.view.addSubview(activityindicatorView)
+            activityindicatorView.frame = self.view.frame
+            activityindicatorView.center = self.view.center
+            activityindicatorView.startAnimating()
+            DispatchQueue.global().async {
+                //Do some heavy tasks ?
+                for index in 1...10000000 {
+                    print(index)
+                }
+                //After finishing heavy tasks, stop animationing and load image
+                DispatchQueue.main.async {
+                    self.imageView?.image = chosenImage
+                    activityindicatorView.stopAnimating()
+                }
+            }
+        })
+        
     }
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)

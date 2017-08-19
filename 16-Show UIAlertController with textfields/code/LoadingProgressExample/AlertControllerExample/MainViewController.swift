@@ -68,8 +68,26 @@ class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINav
     //MARK - UINavigationControllerDelegate
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let chosenImage:UIImage = info[UIImagePickerControllerEditedImage] as! UIImage
-        self.imageView?.image = chosenImage
-        picker.dismiss(animated: true, completion: nil)
+        picker.dismiss(animated: true, completion: {
+            let activityindicatorView = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+            activityindicatorView.color = UIColor.red
+            self.view.addSubview(activityindicatorView)
+            activityindicatorView.frame = self.view.frame
+            activityindicatorView.center = self.view.center
+            activityindicatorView.startAnimating()
+            DispatchQueue.global().async {
+                //Do some heavy tasks ?
+                for index in 1...10000000 {
+                    print(index)
+                }
+                //After finishing heavy tasks, stop animationing and load image
+                DispatchQueue.main.async {
+                    self.imageView?.image = chosenImage
+                    activityindicatorView.stopAnimating()
+                }
+            }
+        })
+        
     }
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
@@ -79,5 +97,29 @@ class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINav
 
         // Do any additional setup after loading the view.
     }
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.verifyInformation()
+    }
+    func verifyInformation() {
+        alertController = UIAlertController(title: "Verification", message: "Enter email or password", preferredStyle: .alert)
+        alertController?.addTextField(configurationHandler: { (textField) in
+            textField.placeholder = "Enter email"
+            textField.keyboardType = .emailAddress
+        })
+        alertController?.addTextField(configurationHandler: { (textField) in
+            textField.placeholder = "Enter password"
+            textField.isSecureTextEntry = true //password like "****"
+        })
+        let okAction = UIAlertAction(title: "OK", style: .default) { (alert) in
+            let textFieldEmail = self.alertController!.textFields![0] as UITextField
+            let textFieldPassword = self.alertController!.textFields![1] as UITextField
+            if (textFieldEmail.text != "sunlight4d@gmail.com" || textFieldPassword.text != "123456") {
+                self.verifyInformation()
+            }
+        }
+        alertController?.addAction(okAction)
+        self.present(alertController!, animated: true, completion: nil)
+        
+    }
 }
