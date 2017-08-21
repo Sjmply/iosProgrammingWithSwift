@@ -9,45 +9,40 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     @IBOutlet weak var progressView:UIProgressView?
     @IBOutlet weak var labelProgress: UILabel?
-    var myTimer: Timer?
     
     let maxTime = 3.0 //3 seconds
     var currentTime = 0.0
-    let timerInterval = 0.03
+    let timerInterval = 0.03 //refresh after 0.03 second
+    var myTimer: Timer?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        progressView?.setProgress(0.0, animated: true)
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    @objc func updateUI(sender: Timer) {
-        if (currentTime < maxTime) {
-            currentTime = currentTime + timerInterval
-            progressView?.setProgress(Float(currentTime / maxTime), animated: true)
-            labelProgress?.text = "\(Int(currentTime * 100 / maxTime)) %"
-        } else {
-            currentTime = 0.0
-            myTimer?.invalidate()
-        }
-    }
     @IBAction func btnStart(sender: UIButton) {
         guard myTimer == nil else { return }
         myTimer?.invalidate()
-        Timer.scheduledTimer(timeInterval: timerInterval,target: self,
-                             selector: #selector(updateUI(sender:)),
-                             userInfo: nil,
-                             repeats: true)
-        
+        myTimer = Timer.scheduledTimer(timeInterval: timerInterval,target: self,
+                                       selector: #selector(updateUI(sender:)),
+                                       userInfo: nil,
+                                       repeats: true)
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc func updateUI(sender: Timer) {
+        if (currentTime < maxTime) {
+            currentTime = currentTime + timerInterval
+            progressView?.progress = Float(currentTime / maxTime)
+            labelProgress?.text = "\(Int(currentTime * 100 / maxTime)) %"
+        } else {
+            //When it is 100 %
+            currentTime = 0.0
+            myTimer?.invalidate()
+            myTimer = nil
+        }
     }
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        progressView?.setProgress(0.0, animated: true)
+        labelProgress?.text = ""
+    }
 
 }
 

@@ -17,33 +17,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="W9J-qm-v6c">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="a6o-vx-ebj">
                                 <rect key="frame" x="112.5" y="297.5" width="150" height="92.5"/>
                                 <subviews>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jZk-JE-6Qx">
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xkr-6g-xYE">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="2"/>
-                                        <color key="tintColor" red="0.90714518229999996" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="HYF-qI-l11"/>
+                                            <constraint firstAttribute="width" constant="150" id="IjS-ZG-dp0"/>
                                         </constraints>
+                                        <color key="progressTintColor" red="0.90714518229999996" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </progressView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7v-kp-Vrz">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1H-Sl-i0n">
                                         <rect key="frame" x="54" y="22" width="42" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21Y-mz-5dU">
-                                        <rect key="frame" x="8" y="62.5" width="134" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73w-Vd-r9f">
+                                        <rect key="frame" x="15" y="62.5" width="120" height="30"/>
                                         <color key="backgroundColor" red="0.29411764709999999" green="0.53725490200000003" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="134" id="1OR-6U-udP"/>
+                                            <constraint firstAttribute="width" constant="120" id="hee-tQ-c9l"/>
                                         </constraints>
                                         <state key="normal" title="Start">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="btnStartWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ad-E6-6aV"/>
+                                            <action selector="btnStartWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HIX-CD-PIm"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -51,14 +51,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="W9J-qm-v6c" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="901-KX-394"/>
-                            <constraint firstItem="W9J-qm-v6c" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ap8-Sd-YgK"/>
+                            <constraint firstItem="a6o-vx-ebj" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="1Ta-ry-POL"/>
+                            <constraint firstItem="a6o-vx-ebj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MYA-Q2-OcF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="labelProgress" destination="H7v-kp-Vrz" id="hkq-4Y-BMa"/>
-                        <outlet property="progressView" destination="jZk-JE-6Qx" id="CEt-eQ-AKi"/>
+                        <outlet property="labelProgress" destination="z1H-Sl-i0n" id="loz-IP-Df3"/>
+                        <outlet property="progressView" destination="Xkr-6g-xYE" id="Vig-mv-w8d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
