@@ -50,6 +50,4 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         label?.backgroundColor = .darkGray
         return label!
     }
-
 }
-

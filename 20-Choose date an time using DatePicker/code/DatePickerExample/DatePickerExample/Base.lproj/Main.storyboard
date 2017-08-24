@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DatePickerExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUQ-VW-wyR">
+                                <rect key="frame" x="20" y="410" width="38" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YOe-BG-xQA">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="525064297.76196998">
+                                    <!--2017-08-22 03:11:37 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="valueChangedWithSender:forEvent:" destination="BYZ-38-t0r" eventType="valueChanged" id="p1e-Gi-FP3"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yp-kg-ZK7">
+                                <rect key="frame" x="20" y="369" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XUQ-VW-wyR" firstAttribute="top" secondItem="6yp-kg-ZK7" secondAttribute="bottom" constant="20" id="Fkp-ZM-Djs"/>
+                            <constraint firstItem="YOe-BG-xQA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GfF-Fk-xxO"/>
+                            <constraint firstItem="XUQ-VW-wyR" firstAttribute="leading" secondItem="6yp-kg-ZK7" secondAttribute="leading" id="TJn-Wr-yXY"/>
+                            <constraint firstItem="YOe-BG-xQA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aDe-rv-XjB"/>
+                            <constraint firstItem="XUQ-VW-wyR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mYO-ke-rNJ"/>
+                            <constraint firstItem="YOe-BG-xQA" firstAttribute="top" secondItem="XUQ-VW-wyR" secondAttribute="bottom" constant="20" id="qKp-j7-75T"/>
+                            <constraint firstItem="YOe-BG-xQA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rcm-2d-53c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="YOe-BG-xQA" id="WKX-8d-w2W"/>
+                        <outlet property="labelDate" destination="6yp-kg-ZK7" id="DXx-af-0QE"/>
+                        <outlet property="labelTime" destination="XUQ-VW-wyR" id="t6E-Ti-Beg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
