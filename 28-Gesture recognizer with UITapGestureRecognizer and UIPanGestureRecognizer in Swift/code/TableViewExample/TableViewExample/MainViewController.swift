@@ -21,11 +21,9 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+
         // Do any additional setup after loading the view.
     }
-    
     //MARK - UITableViewDataSource & UITableViewDelegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return foods.count
