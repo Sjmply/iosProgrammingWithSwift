@@ -2,7 +2,7 @@
 //  FoodData.swift
 //  TableViewExample
 //
-//  Created by Nguyen Duc Hoang on 8/28/17.
+//  Created by Nguyen Duc Hoang on 8/29/17.
 //  Copyright © 2017 Nguyen Duc Hoang. All rights reserved.
 //
 

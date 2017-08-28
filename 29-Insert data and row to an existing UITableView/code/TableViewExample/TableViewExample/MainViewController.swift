@@ -28,6 +28,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         } else {
             cell.imageViewFood?.image = UIImage(named: food.imageName!)
         }
+        
         cell.lblFoodName?.text = food.foodName
         cell.lblRating?.text = ""
         for _ in 1...(food.rating ?? 1) {

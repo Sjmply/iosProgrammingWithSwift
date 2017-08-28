@@ -8,11 +8,12 @@
 
 import UIKit
 
-class NewFoodViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+class NewFoodViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate,UINavigationControllerDelegate  {
     @IBOutlet weak var txtFoodName: UITextField?
     @IBOutlet weak var imageViewFood: UIImageView?
     @IBOutlet weak var lblRating: UILabel?
     var newFood = Food()
+    
     @IBAction func btnSave(sender: UIButton) {
         print("press Save !")
         if (newFood.image == nil || newFood.rating ?? 0 < 1 || newFood.foodName?.count == 0) {
@@ -23,12 +24,12 @@ class NewFoodViewController: UIViewController, UITextFieldDelegate, UIImagePicke
             alertController.addAction(okAction)
             self.present(alertController, animated: true, completion: nil)
         } else {
+            //Add newFood to foods array
             foods.append(newFood)
             navigationController?.popViewController(animated: true)
             let mainViewController = self.navigationController?.topViewController as? MainViewController
             mainViewController?.tableView?.reloadData()
         }
-        
     }
     
     override func viewDidLoad() {
@@ -61,9 +62,6 @@ class NewFoodViewController: UIViewController, UITextFieldDelegate, UIImagePicke
         let chosenImage:UIImage = info[UIImagePickerControllerEditedImage] as! UIImage
         imageViewFood!.image = chosenImage
         newFood.image = chosenImage
-        picker.dismiss(animated: true, completion: nil)
-    }
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
     @objc func panInLabelRating(sender: UIGestureRecognizer) {
@@ -99,16 +97,18 @@ class NewFoodViewController: UIViewController, UITextFieldDelegate, UIImagePicke
             lblRating?.text = "★★★★☆"
             newFood.rating = 4
         } else if (frame5.contains(locationInView)) {
-            newFood.rating = 5
             lblRating?.text = "★★★★★"
+            newFood.rating = 5
         }
     }
     //MARK -- UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print("press return")
+        textField.resignFirstResponder()
         return true
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         newFood.foodName = textField.text ?? ""
+        textField.resignFirstResponder()
     }
 }

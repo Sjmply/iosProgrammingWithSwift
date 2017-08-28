@@ -40,7 +40,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>    
+	</array>
     <key>NSPhotoLibraryUsageDescription</key>
     <string>$(PRODUCT_NAME) photo use</string>
 </dict>
