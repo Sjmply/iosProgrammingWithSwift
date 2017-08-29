@@ -7,7 +7,7 @@
 //
 
 import Foundation
-var foods:[Food] = [
+var foods = [
     Food(imageName: "cream-tea", foodName: "Cream Tea", rating: 2, foodDescription: "This is a cup of cream tea"),
     Food(imageName: "japanese-salad", foodName: "Japanese Salad", rating: 2, foodDescription: "Very delicious Japanese Salad"),
     Food(imageName: "kimchi", foodName: "Korean Kimchi", rating: 3, foodDescription: "Traditional Korean Food"),
