@@ -13,6 +13,13 @@
 		FA2DB6591F566756001A7561 /* CoreDataExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA2DB6571F566756001A7561 /* CoreDataExample.xcdatamodeld */; };
 		FA2DB65B1F566756001A7561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2DB65A1F566756001A7561 /* Assets.xcassets */; };
 		FA2DB65E1F566756001A7561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2DB65C1F566756001A7561 /* LaunchScreen.storyboard */; };
+		FA89C8181F56B7AB000501D3 /* EmployeeMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C8121F56B7AB000501D3 /* EmployeeMO+CoreDataClass.swift */; };
+		FA89C8191F56B7AB000501D3 /* EmployeeMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C8131F56B7AB000501D3 /* EmployeeMO+CoreDataProperties.swift */; };
+		FA89C81A1F56B7AB000501D3 /* PersonMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C8141F56B7AB000501D3 /* PersonMO+CoreDataClass.swift */; };
+		FA89C81B1F56B7AB000501D3 /* PersonMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C8151F56B7AB000501D3 /* PersonMO+CoreDataProperties.swift */; };
+		FA89C81C1F56B7AB000501D3 /* DepartmentMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C8161F56B7AB000501D3 /* DepartmentMO+CoreDataClass.swift */; };
+		FA89C81D1F56B7AB000501D3 /* DepartmentMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C8171F56B7AB000501D3 /* DepartmentMO+CoreDataProperties.swift */; };
+		FA8F3AE01F56D25B00006F54 /* NSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F3ADF1F56D25B00006F54 /* NSDate+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		FA2DB65A1F566756001A7561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA2DB65D1F566756001A7561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA2DB65F1F566756001A7561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA89C8121F56B7AB000501D3 /* EmployeeMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmployeeMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA89C8131F56B7AB000501D3 /* EmployeeMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmployeeMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA89C8141F56B7AB000501D3 /* PersonMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA89C8151F56B7AB000501D3 /* PersonMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA89C8161F56B7AB000501D3 /* DepartmentMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DepartmentMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA89C8171F56B7AB000501D3 /* DepartmentMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DepartmentMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA8F3ADF1F56D25B00006F54 /* NSDate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +54,12 @@
 		FA2DB6441F566756001A7561 = {
 			isa = PBXGroup;
 			children = (
+				FA89C8121F56B7AB000501D3 /* EmployeeMO+CoreDataClass.swift */,
+				FA89C8131F56B7AB000501D3 /* EmployeeMO+CoreDataProperties.swift */,
+				FA89C8141F56B7AB000501D3 /* PersonMO+CoreDataClass.swift */,
+				FA89C8151F56B7AB000501D3 /* PersonMO+CoreDataProperties.swift */,
+				FA89C8161F56B7AB000501D3 /* DepartmentMO+CoreDataClass.swift */,
+				FA89C8171F56B7AB000501D3 /* DepartmentMO+CoreDataProperties.swift */,
 				FA2DB64F1F566756001A7561 /* CoreDataExample */,
 				FA2DB64E1F566756001A7561 /* Products */,
 			);
@@ -58,6 +78,7 @@
 			children = (
 				FA2DB6501F566756001A7561 /* AppDelegate.swift */,
 				FA2DB6521F566756001A7561 /* ViewController.swift */,
+				FA8F3ADF1F56D25B00006F54 /* NSDate+Extensions.swift */,
 				FA2DB6541F566756001A7561 /* Main.storyboard */,
 				FA2DB65A1F566756001A7561 /* Assets.xcassets */,
 				FA2DB65C1F566756001A7561 /* LaunchScreen.storyboard */,
@@ -139,8 +160,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8F3AE01F56D25B00006F54 /* NSDate+Extensions.swift in Sources */,
+				FA89C8191F56B7AB000501D3 /* EmployeeMO+CoreDataProperties.swift in Sources */,
 				FA2DB6531F566756001A7561 /* ViewController.swift in Sources */,
+				FA89C8181F56B7AB000501D3 /* EmployeeMO+CoreDataClass.swift in Sources */,
 				FA2DB6511F566756001A7561 /* AppDelegate.swift in Sources */,
+				FA89C81B1F56B7AB000501D3 /* PersonMO+CoreDataProperties.swift in Sources */,
+				FA89C81A1F56B7AB000501D3 /* PersonMO+CoreDataClass.swift in Sources */,
+				FA89C81C1F56B7AB000501D3 /* DepartmentMO+CoreDataClass.swift in Sources */,
+				FA89C81D1F56B7AB000501D3 /* DepartmentMO+CoreDataProperties.swift in Sources */,
 				FA2DB6591F566756001A7561 /* CoreDataExample.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
