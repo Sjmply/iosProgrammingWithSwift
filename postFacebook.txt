@@ -1,0 +1,27 @@
+Dear Friends, 
+Today I shared to you some tutorial videos in UITableView Swift 4, Xcode 9:
+- Auto layout basic UITableView and UITableViewCell
+- Show and fetch data to UITableViewCell
+- Design a new Scene to add cell to an existing UITableView
+- Use GestureRecognizer to update / remove a Cell by swiping right-to-left
+Details is here(from 25 to 30):
+https://www.youtube.com/watch?v=_UtVBWzFfF8&list=PLWBrqglnjNl2RTk1GL89DmMtRfjvxGisz&index=25
+Github code:
+https://github.com/sunlight3d/iosProgrammingWithSwift.git
+Hope everyone like and give me your comments for better videos
+Thanks and regards,
+
+Nguyen Duc Hoang
+
+Chào các bạn,
+Gửi mọi người một số video lập trình ios với UITableView(Swift 4, Xcode 9):
+- Auto layout UITableView và UITableViewCell
+- Đổ dữ liệu và ảnh vào UITableViewCell
+- Thiết kế màn hình Add để thêm hàng vào Table View
+- Sử dụng GestureRecognizer để chỉnh sửa / xoá một Cell bằng cách vuốt từ phải->trái.
+Chi tiết tại đây(từ video 25 đến 30):
+https://www.youtube.com/watch?v=5xQuz_ijZ00&index=25&list=PLWBrqglnjNl0FySgr9U2ScGEhDnxkfobK
+Mong các bạn đóng góp ý kiến để các video sau được tốt hơn
+Cảm ơn cả nhà
+
+Nguyễn Đức Hoàng
