@@ -22,6 +22,7 @@ extension EmployeeMO {
     @NSManaged public var isManager: Bool
     @NSManaged public var title: String?
     @NSManaged public var department: DepartmentMO?
+    
     static func insertNewImployee(name: String, dateOfBirth: NSDate, hireDate: NSDate, identifier: String, isManager: Bool, title: String) -> EmployeeMO? {
         let employee = NSEntityDescription.insertNewObject(forEntityName: "Employee", into: AppDelegate.managedObjectContext!) as! EmployeeMO
         employee.name = name
@@ -40,31 +41,5 @@ extension EmployeeMO {
         print("Insert employee with name: \(employee.name ?? "") successful")
         return employee
     }
-    static func getAllEmployee() -> [EmployeeMO] {
-        var result = [EmployeeMO]()
-        let moc = AppDelegate.managedObjectContext        
-        do {
-            result = try moc!.fetch(EmployeeMO.fetchRequest()) as! [EmployeeMO]
-        } catch {
-            print("Cannot fetch employees.Error \(error)")
-            return result
-        }
-        return result
-    }
-    static func deleteAllEmployees() -> Bool {
-        let employees = EmployeeMO.getAllEmployee()
-        let moc = AppDelegate.managedObjectContext
-        for employee in employees {
-            moc?.delete(employee)
-        }
-        do {
-            try AppDelegate.managedObjectContext?.save()
-        } catch {
-            let nserror = error as NSError
-            print("Delete all employees unsuccesful. Error is: \(nserror), \(nserror.userInfo)")
-            return false
-        }
-        print("Delete all employees succesful.")
-        return true
-    }
+
 }

@@ -56,4 +56,17 @@ extension DepartmentMO {
         print("Insert department with name: \(department.name ?? "") successful")
         return department
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+

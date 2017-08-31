@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 extension NSDate {
     static func calculateDate(day: Int, month: Int, year: Int) -> NSDate {
         let formatter = DateFormatter()
