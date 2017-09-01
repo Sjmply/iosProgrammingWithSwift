@@ -56,6 +56,44 @@ extension DepartmentMO {
         print("Insert department with name: \(department.name ?? "") successful")
         return department
     }
+    static func fetchDepartmentsWithFilter(nameContains: String?, nameExactly: String?) -> [DepartmentMO] {
+        var result = [DepartmentMO]()
+        let moc = AppDelegate.managedObjectContext
+        let fetchRequest:NSFetchRequest<NSFetchRequestResult> = DepartmentMO.fetchRequest()
+        var subPredicates = [NSPredicate]()
+        if nameContains != nil {
+            //let predicate1 = NSPredicate(format: "name contains[cd] %@", nameContains!) //cd =  Case and diacritic insensitive lookups
+            let predicate1 = NSPredicate(format: "name contains %@", nameContains!)//Case sensitive lookups
+            subPredicates.append(predicate1)
+        }
+        if nameExactly != nil {
+            let predicate2 = NSPredicate(format: "name == %@", nameExactly!)
+            subPredicates.append(predicate2)
+        }
+        if subPredicates.count > 0 {
+            let compoundPredicates = NSCompoundPredicate.init(type: .and, subpredicates: subPredicates)
+            fetchRequest.predicate = compoundPredicates
+        }
+        do {
+            result = try moc!.fetch(fetchRequest) as! [DepartmentMO]
+        } catch {
+            print("Cannot fetch employees.Error \(error)")
+            return result
+        }
+        return result
+    }
+    func toString() {
+        print("Department's details. Name = \(name ?? ""), address: \(address ?? ""), city: \(city ?? ""), zipCode: \(zipCode)")
+        if let employeeList = self.employees {
+            if employeeList.count == 0 {
+                return
+            }
+            print("Department's employees details: ")
+            for eachEmployee in employeeList {
+                (eachEmployee as! EmployeeMO).toString()
+            }
+        }
+    }
 
 }
 

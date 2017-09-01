@@ -68,7 +68,9 @@ extension EmployeeMO {
         print("Delete all employees succesful.")
         return true
     }
-    
+    func toString() {
+        print("Employee's details. Name = \(name ?? ""), identifier: \(identifier ?? ""), isManager: \(isManager), title: \(title ?? "")")
+    }
     
     
     
