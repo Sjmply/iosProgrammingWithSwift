@@ -2,7 +2,7 @@
 //  Database.swift
 //  SQliteExample
 //
-//  Created by Nguyen Duc Hoang on 9/1/17.
+//  Created by Nguyen Duc Hoang on 9/2/17.
 //  Copyright © 2017 Nguyen Duc Hoang. All rights reserved.
 //
 
@@ -20,7 +20,9 @@ class Database {
         } catch {
             connection = nil
             let nserror = error as NSError
-            print("Cannot connect to Database. Error is: \(nserror), \(nserror.userInfo)")            
+            print("Cannot connect to Database. Error is: \(nserror), \(nserror.userInfo)")
         }
     }
 }
+
+

@@ -1,8 +1,8 @@
 //
-//  EmployeeModel.swift
+//  EmployeeEntity.swift
 //  SQliteExample
 //
-//  Created by Nguyen Duc Hoang on 9/1/17.
+//  Created by Nguyen Duc Hoang on 9/2/17.
 //  Copyright © 2017 Nguyen Duc Hoang. All rights reserved.
 //
 
@@ -42,6 +42,7 @@ class EmployeeEntity {
             print("Create table employees failed. Error is: \(nserror), \(nserror.userInfo)")
         }
     }
+    //Do the same with function "insert" as in DepartmentEntity
     func insert(name: String, hireDate: Date, identifier: String, isManager: Bool, title: String?, departmentId: Int64?) -> Int64? {
         do {
             let insert = tblEmployee.insert(self.name <- name,
@@ -59,7 +60,7 @@ class EmployeeEntity {
         }
     }
     func queryAll() -> AnySequence<Row>? {
-        do {            
+        do {
             return try Database.shared.connection?.prepare(self.tblEmployee)
         } catch {
             let nserror = error as NSError
@@ -67,6 +68,7 @@ class EmployeeEntity {
             return nil
         }
     }
+    
     func toString(employee: Row) {
         print("""
             Employee details: name = \(employee[self.name]),

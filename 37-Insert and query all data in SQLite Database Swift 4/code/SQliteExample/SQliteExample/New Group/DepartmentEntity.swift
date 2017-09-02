@@ -1,8 +1,8 @@
 //
-//  DepartmentModel.swift
+//  DepartmentEntity.swift
 //  SQliteExample
 //
-//  Created by Nguyen Duc Hoang on 9/1/17.
+//  Created by Nguyen Duc Hoang on 9/2/17.
 //  Copyright © 2017 Nguyen Duc Hoang. All rights reserved.
 //
 
@@ -31,18 +31,21 @@ class DepartmentEntity {
                     table.column(self.zipCode)
                 }))
                 print("Create table tblDepartment successfully")
+            } else {
+                print("Create table tblDepartment failed.")
             }
         } catch {
             let nserror = error as NSError
             print("Create table tblDepartment failed. Error is: \(nserror), \(nserror.userInfo)")
         }
     }
+    //Insert a record to tblDepartment
     func insert(name: String, address: String, city: String, zipCode: Int64?) -> Int64? {
         do {
             let insert = tblDepartment.insert(self.name <- name,
-                                            self.address <- address,
-                                            self.city <- city,
-                                            self.zipCode <- zipCode ?? 0)
+                                              self.address <- address,
+                                              self.city <- city,
+                                              self.zipCode <- zipCode ?? 0)
             let insertedId = try Database.shared.connection!.run(insert)
             return insertedId
         } catch {
@@ -50,13 +53,15 @@ class DepartmentEntity {
             print("Cannot insert new Department. Error is: \(nserror), \(nserror.userInfo)")
             return nil
         }
+        
     }
+    //How to query(find) all records in tblDepartment ?
     func queryAll() -> AnySequence<Row>? {
-        do {            
+        do {
             return try Database.shared.connection?.prepare(self.tblDepartment)
         } catch {
             let nserror = error as NSError
-            print("Cannot query all tblDepartment. Error is: \(nserror), \(nserror.userInfo)")
+            print("Cannot query(list) all tblDepartment. Error is: \(nserror), \(nserror.userInfo)")
             return nil
         }
     }
@@ -66,31 +71,6 @@ class DepartmentEntity {
             address = \(department[self.address]),
             city = \(department[self.city]),
             zipCode = \(department[self.zipCode]))
-        """)
+            """)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
