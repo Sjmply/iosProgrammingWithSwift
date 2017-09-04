@@ -48,8 +48,9 @@ class MainViewController: UIViewController {
                                                         isManager: false,
                                                         title: "This is a member",
                                                         departmentId: department1Id)
-        
         */
+        
+        /*
         if let departmentQuery: AnySequence<Row> = DepartmentEntity.shared.queryAll() {
             for eachDepartment in departmentQuery {
                 DepartmentEntity.shared.toString(department: eachDepartment)
@@ -60,7 +61,22 @@ class MainViewController: UIViewController {
                 EmployeeEntity.shared.toString(employee: eachEmployee)
             }
         }
- 
+        */
+        if let departmentQuery: AnySequence<Row> = DepartmentEntity.shared.filter() {
+            for eachDepartment in departmentQuery {
+                DepartmentEntity.shared.toString(department: eachDepartment)
+            }
+            
+//            if departmentQuery.count() > 0 {
+////                departmentQuery.forEach({ (row) in
+////                    DepartmentEntity.shared.toString(department: row)
+////                })
+//
+//
+//            } else {
+//                print("No department count")
+//            }
+        }
         
     }
 

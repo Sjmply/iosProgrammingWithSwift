@@ -65,9 +65,48 @@ class DepartmentEntity {
             return nil
         }
     }
+    func filter() -> AnySequence<Row>? {
+        do {
+            
+            //SELECT * FROM "tblDepartment" WHERE ("id" = 1)
+//            let filterCondition = (id == 1)
+            
+            //SELECT * FROM "users" WHERE ("id" IN (1, 2, 3, 4, 5))
+            //let filterCondition = [1, 2, 3, 4, 5].contains(id)
+            
+            let filterCondition = name.like("%Department%")
+            
+            return try Database.shared.connection?.prepare(self.tblDepartment.filter(filterCondition))
+            
+            //return try Database.shared.connection?.prepare(self.tblDepartment.filter([1, 2, 3, 4, 5].contains(id))
+        } catch {
+            let nserror = error as NSError
+            print("Cannot list / query objects in tblDepartment. Error is: \(nserror), \(nserror.userInfo)")
+            return nil
+        }
+    }        
+    
+//    ``` swift
+//    746: users.filter(id == 1)
+//    747  // SELECT * FROM "users" WHERE ("id" = 1)
+//    748
+//    749: users.filter([1, 2, 3, 4, 5].contains(id))
+//    750  // SELECT * FROM "users" WHERE ("id" IN (1, 2, 3, 4, 5))
+//    751
+//    752: users.filter(email.like("%@mac.com"))
+//    753  // SELECT * FROM "users" WHERE ("email" LIKE '%@mac.com')
+//    754
+//    755: users.filter(verified && name.lowercaseString == "alice")
+//    756  // SELECT * FROM "users" WHERE ("verified" AND (lower("name") == 'alice'))
+//    757
+//    758: users.filter(verified || balance >= 10_000)
+//    759  // SELECT * FROM "users" WHERE ("verified" OR ("balance" >= 10000.0))
+//    760  ```
+    
     func toString(department: Row) {
         print("""
-            Department details. Name = \(department[self.name]),\
+            Department details. id = \(department[self.id]),
+            Name = \(department[self.name]),
             address = \(department[self.address]),
             city = \(department[self.city]),
             zipCode = \(department[self.zipCode]))

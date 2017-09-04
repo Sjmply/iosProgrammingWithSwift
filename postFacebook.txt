@@ -37,3 +37,27 @@ core data delete item,core data apple,core data example,swift 4 core data,swift 
 sqlite swift, sqlite swift 4, sqlite swift tutorial, sqlite swift xcode, sqlite swift ios, sqlite database in ios swift, sqlite ios, sqlite ios tutorial, sqlite ios swift, sqlite tutorial ios, sqlite tutorial ios swift 4, swift sqlite, swift sqlite example, swift sqlite tutorial, sqlite in swift, sqlite in swift tutorial, sqlite in swift example, sqlite in swift 4, sqlite in swift 4 tutorial, sqlite swift 4 tutorial, ios tutorial
 
 
+Dear Friends, 
+Today I shared to you some tutorial videos in Core Data with Swift 4, Xcode 9:
+- Create Core data relations: to One, to Many
+- Subclassing Managed Object Model to map with Core Data relations
+- Deleting or fetching videos with input conditions(using NSPredicate)
+Details is here(from video 31):
+https://www.youtube.com/watch?v=39REoGtqF0g&index=31&list=PLWBrqglnjNl2RTk1GL89DmMtRfjvxGisz
+Github code:
+https://github.com/sunlight3d/iosProgrammingWithSwift.git
+Please give me your comment and advice me to do more necessary videos
+Hope everyone like and give me your comments for better videos
+Thanks and regards,
+
+Nguyen Duc Hoang
+
+
+            
+            //SELECT * FROM "tblDepartment" WHERE ("id" = 1)
+//            let filterCondition = (id == 1)
+            
+            //SELECT * FROM "users" WHERE ("id" IN (1, 2, 3, 4, 5))
+            //let filterCondition = [1, 2, 3, 4, 5].contains(id)
+            
+//            let filterCondition = self.name.like("%Department%")
