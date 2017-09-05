@@ -69,10 +69,14 @@ class MainViewController: UIViewController {
             }
         }
         print("Begin update...")
-        if DepartmentEntity.shared.update(id: 1, name: nil, address: "new address123", city: "a new City123", zipCode: 8888) {
-           print("Update successful")
+        if DepartmentEntity.shared.update(id: 1,
+                                          name: nil,
+                                          address: "new address999",
+                                          city: "a new City999",
+                                          zipCode: 9999) {
+            print("Update successful")
         } else {
-           print("Update unsuccessful")
+            print("Update unsuccessful")
         }
         print("After update...")
         if let departmentQuery: AnySequence<Row> = DepartmentEntity.shared.filter() {

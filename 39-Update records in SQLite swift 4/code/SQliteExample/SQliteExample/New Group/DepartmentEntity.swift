@@ -79,7 +79,7 @@ class DepartmentEntity {
             return nil
         }
     }
-    //UPDATE tblDepartment SET(name= ... and address = ... and city = ... and zipcode = ...) WHERE
+    //UPDATE tblDepartment SET(name= ... and address = ... and city = ... and zipcode = ...) WHERE id == ??
     func update(id: Int64, name: String?,address:String?,city:String?,zipCode:Int64?) -> Bool {
         if Database.shared.connection == nil {
             return false
@@ -111,11 +111,10 @@ class DepartmentEntity {
             return true
         } catch {
             let nserror = error as NSError
-            print("Cannot list / query objects in tblDepartment. Error is: \(nserror), \(nserror.userInfo)")
+            print("Cannot update objects in tblDepartment. Error is: \(nserror), \(nserror.userInfo)")
             return false
         }
     }
-    
     //How to query(find) all records in tblDepartment ?
     func queryAll() -> AnySequence<Row>? {
         do {
