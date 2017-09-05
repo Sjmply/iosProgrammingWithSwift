@@ -62,6 +62,19 @@ class MainViewController: UIViewController {
             }
         }
          */
+        print("Before update...")
+        if let departmentQuery: AnySequence<Row> = DepartmentEntity.shared.filter() {
+            for eachDepartment in departmentQuery {
+                DepartmentEntity.shared.toString(department: eachDepartment)
+            }
+        }
+        print("Begin update...")
+        if DepartmentEntity.shared.update(id: 1, name: nil, address: "new address123", city: "a new City123", zipCode: 8888) {
+           print("Update successful")
+        } else {
+           print("Update unsuccessful")
+        }
+        print("After update...")
         if let departmentQuery: AnySequence<Row> = DepartmentEntity.shared.filter() {
             for eachDepartment in departmentQuery {
                 DepartmentEntity.shared.toString(department: eachDepartment)

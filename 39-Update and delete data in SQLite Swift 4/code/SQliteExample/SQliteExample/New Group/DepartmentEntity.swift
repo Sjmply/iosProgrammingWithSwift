@@ -58,7 +58,7 @@ class DepartmentEntity {
     func filter() -> AnySequence<Row>? {
         do {
             //SELECT * FROM "tblDepartment" WHERE ("id" = 1)
-            //let filterCondition = (id == 1)
+            let filterCondition = (id == 1)
             
             //SELECT * FROM "tblDepartment" WHERE ("id" IN (1, 2, 3, 4))
             //let filterCondition = [1, 2, 3, 4].contains(id)
@@ -70,7 +70,7 @@ class DepartmentEntity {
             //let filterCondition = (id >= 3) && (name.lowercaseString == "sales department")
             
             //SELECT * FROM "tblDepartment" WHERE ("id" == 3) OR ("id" == 3)
-            let filterCondition = (id == 3) || (id == 4)
+//            let filterCondition = (id == 3) || (id == 4)
             
             return try Database.shared.connection?.prepare(self.tblDepartment.filter(filterCondition))
         } catch {
@@ -79,6 +79,43 @@ class DepartmentEntity {
             return nil
         }
     }
+    //UPDATE tblDepartment SET(name= ... and address = ... and city = ... and zipcode = ...) WHERE
+    func update(id: Int64, name: String?,address:String?,city:String?,zipCode:Int64?) -> Bool {
+        if Database.shared.connection == nil {
+            return false
+        }
+        do {
+            let tblFilterDepartment = self.tblDepartment.filter(self.id == id)
+            var setters:[SQLite.Setter] = [SQLite.Setter]()
+            if name != nil {
+                setters.append(self.name <- name!)
+            }
+            if address != nil {
+                setters.append(self.address <- address!)
+            }
+            if city != nil {
+                setters.append(self.city <- city!)
+            }
+            if zipCode != nil {
+                setters.append(self.zipCode <- zipCode!)
+            }
+            if setters.count == 0  {
+                print("Nothing to update")
+                return false
+            }
+            let update = tblFilterDepartment.update(setters)
+            if try Database.shared.connection!.run(update) <= 0 {
+                //Update unsuccessful
+                return false
+            }
+            return true
+        } catch {
+            let nserror = error as NSError
+            print("Cannot list / query objects in tblDepartment. Error is: \(nserror), \(nserror.userInfo)")
+            return false
+        }
+    }
+    
     //How to query(find) all records in tblDepartment ?
     func queryAll() -> AnySequence<Row>? {
         do {

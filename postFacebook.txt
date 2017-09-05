@@ -37,6 +37,8 @@ core data delete item,core data apple,core data example,swift 4 core data,swift 
 
 sqlite swift, sqlite swift 4, sqlite swift tutorial, sqlite swift xcode, sqlite swift ios, sqlite database in ios swift, sqlite ios, sqlite ios tutorial, sqlite ios swift, sqlite tutorial ios, sqlite tutorial ios swift 4, swift sqlite, swift sqlite example, swift sqlite tutorial, sqlite in swift, sqlite in swift tutorial, sqlite in swift example, sqlite in swift 4, sqlite in swift 4 tutorial, sqlite swift 4 tutorial, ios tutorial
 
+filter dữ liệu sqlite swift, query dữ liệu trong sqlite ios, thêm dữ liệu vào sqlite ios, list dữ liệu trong sqlite ios, sqlite trong ios, sử dụng sqlite swift, cơ sở dữ liệu, sqlite, swift 4, sqlite trong swift 4, làm việc với sqlite trong ios, cấu hình sqlite trong ios, sqlite swift là gì, cài đặt sqlite ios, cài đặt sqlite trong xcode, làm việc với sqlite trong xcode, tự học lập trình ios, tự học ios, lap trinh ios, lập trình ios, khoa hoc lap trinh
+
 
 Dear Friends, 
 Today I shared to you some tutorial videos in Core Data with Swift 4, Xcode 9:
