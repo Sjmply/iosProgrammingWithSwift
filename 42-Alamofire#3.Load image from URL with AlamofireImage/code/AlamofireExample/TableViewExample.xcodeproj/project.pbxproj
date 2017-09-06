@@ -10,9 +10,9 @@
 		FA20AA0B1F5EFD5400827F6D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA20AA091F5EFD3600827F6D /* Alamofire.framework */; };
 		FA20AA0C1F5EFD5400827F6D /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA20AA091F5EFD3600827F6D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA331BDD1F5256F000E762D7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA331BDC1F5256F000E762D7 /* MainViewController.swift */; };
-		FA4EF34E1F5FE8120073AAFD /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4EF34D1F5FE5D50073AAFD /* AlamofireImage.framework */; };
-		FA4EF34F1F5FE8120073AAFD /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA4EF34D1F5FE5D50073AAFD /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA8BA5A11F5F8688003937F8 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8BA5A01F5F8688003937F8 /* FoodTableViewCell.swift */; };
+		FAC256A81F5FEBD200C98824 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC256A71F5FEBC800C98824 /* AlamofireImage.framework */; };
+		FAC256A91F5FEBD200C98824 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAC256A71F5FEBC800C98824 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FAC6EFAA1F51C32A00E8E2B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6EFA91F51C32A00E8E2B6 /* AppDelegate.swift */; };
 		FAC6EFAF1F51C32A00E8E2B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC6EFAD1F51C32A00E8E2B6 /* Main.storyboard */; };
 		FAC6EFB11F51C32A00E8E2B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC6EFB01F51C32A00E8E2B6 /* Assets.xcassets */; };
@@ -27,7 +27,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FA20AA0C1F5EFD5400827F6D /* Alamofire.framework in Embed Frameworks */,
-				FA4EF34F1F5FE8120073AAFD /* AlamofireImage.framework in Embed Frameworks */,
+				FAC256A91F5FEBD200C98824 /* AlamofireImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,9 +38,9 @@
 		FA20AA091F5EFD3600827F6D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		FA20AA0A1F5EFD3600827F6D /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = SOURCE_ROOT; };
 		FA331BDC1F5256F000E762D7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		FA4EF34C1F5FE5D50073AAFD /* AlamofireImage.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AlamofireImage.framework.dSYM; path = Carthage/Build/iOS/AlamofireImage.framework.dSYM; sourceTree = SOURCE_ROOT; };
-		FA4EF34D1F5FE5D50073AAFD /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = SOURCE_ROOT; };
 		FA8BA5A01F5F8688003937F8 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		FAC256A61F5FEBC800C98824 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = SOURCE_ROOT; };
+		FAC256A71F5FEBC800C98824 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = SOURCE_ROOT; };
 		FAC6EFA61F51C32A00E8E2B6 /* TableViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC6EFA91F51C32A00E8E2B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC6EFAE1F51C32A00E8E2B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA20AA0B1F5EFD5400827F6D /* Alamofire.framework in Frameworks */,
-				FA4EF34E1F5FE8120073AAFD /* AlamofireImage.framework in Frameworks */,
+				FAC256A81F5FEBD200C98824 /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,8 +83,8 @@
 			children = (
 				FA20AA091F5EFD3600827F6D /* Alamofire.framework */,
 				FA20AA0A1F5EFD3600827F6D /* Alamofire.framework.dSYM */,
-				FA4EF34D1F5FE5D50073AAFD /* AlamofireImage.framework */,
-				FA4EF34C1F5FE5D50073AAFD /* AlamofireImage.framework.dSYM */,
+				FAC256A61F5FEBC800C98824 /* Alamofire.framework.dSYM */,
+				FAC256A71F5FEBC800C98824 /* AlamofireImage.framework */,
 				FAC6EFA91F51C32A00E8E2B6 /* AppDelegate.swift */,
 				FAC6EFAD1F51C32A00E8E2B6 /* Main.storyboard */,
 				FA331BDC1F5256F000E762D7 /* MainViewController.swift */,

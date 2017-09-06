@@ -36,13 +36,21 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             cell.lblFoodName?.text = (eachFood["name"] as? String) ?? ""
             cell.lblDescription?.text = (eachFood["foodDescription"] as? String) ?? ""
             if let imageUrl = eachFood["imageUrl"] as? String {
-                Alamofire.request("http://" + imageUrl).responseImage { response in
+                Alamofire.request("http://" + imageUrl).responseImage(completionHandler: { (response) in
+                    print(response)
                     if let image = response.result.value {
+                        /*
+                        let size = CGSize(width: 1000.0, height: 1000.0)
+                        // Scale image to size disregarding aspect ratio
+                        let scaledImage = image.af_imageScaled(to: size)
+                        */
+//                        let roundedImage = image.af_imageRounded(withCornerRadius: 100.0)
+                        let circularImage = image.af_imageRoundedIntoCircle()
                         DispatchQueue.main.async {
-                            cell.imageViewFood?.image = image
+                            cell.imageViewFood?.image = circularImage
                         }
                     }
-                }
+                })
             }
         }
         return cell
