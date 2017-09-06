@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import AlamofireImage
 
 class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView?
@@ -19,7 +20,6 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 if let responseFoods = responseValue["data"] as! [[String: Any]]? {
                     self.foods = responseFoods
                     self.tableView?.reloadData()
-                    print("assss")
                 }
             }
         }
@@ -35,6 +35,15 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             let eachFood = foods[indexPath.row]
             cell.lblFoodName?.text = (eachFood["name"] as? String) ?? ""
             cell.lblDescription?.text = (eachFood["foodDescription"] as? String) ?? ""
+            if let imageUrl = eachFood["imageUrl"] as? String {
+                Alamofire.request("http://" + imageUrl).responseImage { response in
+                    if let image = response.result.value {
+                        DispatchQueue.main.async {
+                            cell.imageViewFood?.image = image
+                        }
+                    }
+                }
+            }
         }
         return cell
     }
