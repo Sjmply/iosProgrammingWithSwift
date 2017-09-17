@@ -69,6 +69,23 @@ Cảm ơn cả nhà
 
 Nguyễn Đức Hoàng
 
+Dear Friends, 
+Today I shared to you some tutorial videos Alamofire with Swift 4, Xcode 9:
+- Install Alamofire with Cocoapods and Carthage
+- Send GET request and get response data to fill in a TableView
+- Download images from URL link and show in UIImageView with AlamofireImage
+Details is here(from video 40):
+https://www.youtube.com/watch?v=VVHPbxOHqPk&list=PLWBrqglnjNl2RTk1GL89DmMtRfjvxGisz&index=40
+Github code:
+https://github.com/sunlight3d/iosProgrammingWithSwift.git
+Please give me your comment and advice me to do more necessary videos
+Hope everyone like and give me your comments for better videos
+Thanks and regards,
+
+Nguyen Duc Hoang
+
+
+
 Dear Friend,
 You can see my videos in “Swift 4 programming”:
 https://www.youtube.com/playlist?list=PLWBrqglnjNl3ozBEEJD5nk1EEeAQ58zaM
@@ -104,6 +121,87 @@ alamofire, alamofire swift, alamofire swift 4, alamofire tutorial, alamofire tut
 
 alamofire, alamofire là gì, làm việc với alamofire, alamofire trong swift 4, tự học lập trình ios, tự học ios, lap trinh ios, lập trình ios, khoa hoc lap trinh, lập trình ios swift, học lập trình swift, cài đặt alamofire, học alamofire, tự học alamofire
 
+Dear Friends, 
+Today I shared to you some tutorial videos in SQLite in Swift 4, Xcode 9:
+- Install SQLite Swift with Cocoapods
+- Connect SQLite Database, create entities and model classes.
+- Insert and query data
+- Filtering data in SQLite database in Swift 4
+Details is here(from video 35):
+https://www.youtube.com/watch?v=qnW0u2I-I-E&index=35&list=PLWBrqglnjNl2RTk1GL89DmMtRfjvxGisz
+Github code:
+https://github.com/sunlight3d/iosProgrammingWithSwift.git
+Please give me your comment and advice me to do more necessary videos
+Hope everyone like and give me your comments for better videos
+Thanks and regards,
+
+Nguyen Duc Hoang
+
+
+Chào các bạn,
+Mình mới làm mấy video về SQLite trong Swift 4 và Xcode 9(tiếng Việt):
+- Cài đặt SQlite với Cocoapods.
+- Kết nối cơ sở dữ liệu SQLite trong Swift 4
+- Thêm và lấy danh sách dữ liệu trong SQLite
+- Lọc dữ liệu có điều kiện, cập nhật data 
+Chi tiết ở đây(từ video 35):
+https://www.youtube.com/watch?v=1gcrPJZT7Ac&index=35&list=PLWBrqglnjNl0FySgr9U2ScGEhDnxkfobK
+Các bạn có thể download code trên github:
+https://github.com/sunlight3d/iosProgrammingWithSwift.git
+Rất mong các bạn đóng góp ý kiến và tư vấn thêm cho mình các topic mới để mình làm thêm tut.
+Cảm ơn cả nhà
+
+Nguyễn Đức Hoàng
+
+
+ios design patterns => 17/15
+
+
+46/100
+map ios, mapkit, map ios 11
+
+HTML5 (Programming Language), Cascading Style Sheets (Programming Language), HTML, XHTML, HTML5, CSS, CSS3, Cascading Style Sheets, Hyper Text Mark up Language, IT, Information Technology, Science, Computer Science, Websites, Web Design, Web Development, Web Programming, Programming, How to, How to write a website, CS, Make a website from start to finish, Tutorial, ProgrammersCreed, Programmers, Creed, Quentin, Watt
+
+
+swift tutorial,swift ios, swift 4 tutorial, swift 4, swift programming for beginners, swift programming, swift tutorial apple, swift tutorial for beginners 2017, swift tutorial xcode 9, tutorial swift 4, let and var in swift, swift playground, swift print, swift let vs var, let in swift, var in swift, typealias swift, typealias swift 4, swift typealias tutorial, swift typealias, optional in swift, swift optionals, emoji symbols swift
+
+
+redux, redux tutorial  react redux tutorial, react redux, redux react tutorial, react & redux,
+introduction of redux, redux architecture, redux architecture diagram, redux architecture tutorial, redux basics, javascript, what is redux, redux for beginners, redux for dummies, redux introduction, redux intro, best react framework, redux react
+
+redux, redux là gì, tự học redux, giới thiệu redux, redux cho nguoi moi, học redux, tìm hiểu redux, redux để làm gì, làm việc với redux, luồng dữ liệu redux, react và redux, giới thiệu về redux
+
+11-React.js#11.
+https://www.youtube.com/watch?v=qRocZvF5sVw&index=6&list=PLWBrqglnjNl2VUXQKCKoejdDu3XqxV5tj
+Edit video:
+https://www.youtube.com/edit?video_id=qRocZvF5sVw&video_referrer=watch
+
+
+
+android tutorial
+
+
+https://www.youtube.com/edit?o=U&video_id= Bm5y3JZeE1I&show_mt=1
+https://www.youtube.com/edit?o=U&video_id=VVHPbxOHqPk
+
+
+https://www.youtube.com/edit?o=U&video_id=
+
+
+Tu Khoa hot:
+arkit tutorial, arkit
+
+kotlin android tutorial
+Tham khao Kotlin:
+https://www.youtube.com/playlist?list=PLsyeobzWxl7rooJFZhc3qPLwVROovGCfh
+Tut seo:
+https://www.youtube.com/watch?v=s6W9jFSl5Qs
+
+redux,react redux,redux tutorial,redux framework,what is redux,redux definition,redux js,react redux example,redux example, react redux tutorial,react and redux,react redux boilerplate,reactjs redux,what is redux js,redux course,react redux course,redux framework tutorial,awesome redux,reactjs redux tutorial,learn redux,redux in react,reactjs with redux,redux for dummies,react redux app,reactjs and redux,redux reactjs,redux js tutorial
+
+matplotlib legend, matplotlib legend position, position legend matplotlib,
+matplotlib, matplotlib subplot, python matplotlib, matplotlib tutorial,matplotlib plot,matplotlib examples,matplotlib axis,python matplotlib tutorial,
+matplotlib show,plotting with matplotlib,python matplotlib install,
 
 
 
